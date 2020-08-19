@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
     res.render('index.ejs', {title: title} )
 })
 
+//RUTA ADMINISTRADOR
+app.get('/admin', (req, res) => {
+    var title = app.get('appName')+" | Admin"
+    res.render('admin.ejs', {title: title} )
+})
+
 //nuevas rutas
 
 //RUTA NUESTRA HISTORIA 
